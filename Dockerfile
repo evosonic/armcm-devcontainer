@@ -15,6 +15,9 @@ RUN apt-get update && \
     cu \
     curl \
     make \
+    python3 \
+    python3-pip \
+    python3-venv \
     software-properties-common \
     tar \
     udev \
