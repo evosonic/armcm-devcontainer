@@ -1,4 +1,4 @@
-name: Build image and publish to GitHub Container Repo
+name: Build image and publish to GitHub Container Registry
 
 on:
   workflow_dispatch:
@@ -35,4 +35,3 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: ghcr.io/${{ env.REPO_OWNER }}/armcm-devcontainer
-
