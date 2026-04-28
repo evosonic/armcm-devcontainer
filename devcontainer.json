@@ -9,6 +9,9 @@
   // Pull and use pre-built image from GitHub Container Registry
   "image": "ghcr.io/evosonic/armcm-devcontainer",
 
+  // Install uv for Python tooling in the ESCP module
+  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh",
+
   // Privileged container in order to access /dev
   "privileged": true,
 
